@@ -10,10 +10,10 @@ import {
 // import "./index.css";
 import "./assets/styles/bootstrap.custom.css";
 import "./assets/styles/index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import HomeScreen from "./screens/HomeScreen";
-import ProductScreen from "./screens/ProductScreen";
+import App from "./App.js";
+import reportWebVitals from "./reportWebVitals.js";
+import HomeScreen from "./screens/HomeScreen.jsx";
+import ProductScreen from "./screens/ProductScreen.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(

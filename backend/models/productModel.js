@@ -66,7 +66,7 @@ const productSchema = new Schema(
             required: true,
             default: 0,
         },
-        countInStrock: {
+        countInStock: {
             type: Number,
             required: true,
             default: 0,

@@ -4,6 +4,7 @@ import connectDB from "./config/db.js";
 import productRouter from "./routes/productRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import userRoutes from "./routes/userRoutes.js";
+import cookieParser from "cookie-parser";
 
 dotenv.config();
 const PORT = process.env.PORT || 5000;
@@ -11,8 +12,12 @@ const PORT = process.env.PORT || 5000;
 connectDB();
 const app = express();
 
+// Body Parser
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+//Cookie Parser
+app.use(cookieParser());
 
 app.get("/", (req, res, next) => {
     res.send("Running");

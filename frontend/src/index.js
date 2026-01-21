@@ -17,6 +17,7 @@ import ProductScreen from "./screens/ProductScreen.jsx";
 import CartScreen from "./screens/CartScreen.jsx";
 import LoginScreen from "./screens/LoginScreen.jsx";
 import RegisterScreen from "./screens/RegisterScreen.jsx";
+import PaymentScreen from "./screens/PaymentScreen.jsx";
 import ShippingScreen from "./screens/ShippingScreen.jsx";
 import PrivateRoute from "./components/PrivateRoute.jsx";
 import { Provider } from "react-redux";
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
 
             <Route path="" element={<PrivateRoute />}>
                 <Route path="/shipping" element={<ShippingScreen />} />
+                <Route path="/payment" element={<PaymentScreen />} />
             </Route>
         </Route>,
     ),
